@@ -1,16 +1,15 @@
-FibonacciSeries.java
 public class FibonacciSeries {
     public static void main(String[] args) {
-        int n = 20;
-        int a = 0, b = 1, c;
+        int n = 10; 
 
-        System.out.print("Fibonacci Series: " + a + ", " + b);
+        int a = 0, b = 1;
+        System.out.println("Fibonacci Series up to " + n + " terms:");
 
-        for (int i = 2; i < n; i++) {
-            c = a + b;
-            System.out.print(", " + c);
+        for (int i = 1; i <= n; i++) {
+            System.out.print(a + " ");
+            int next = a + b;
             a = b;
-            b = c;
+            b = next;
         }
     }
 }
